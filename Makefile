@@ -1,17 +1,11 @@
-GCC_BIN=`xcrun --sdk iphoneos --find gcc`
-GCC_UNIVERSAL=$(GCC_BASE) -arch armv7 -arch armv7s -arch arm64
-SDK=`xcrun --sdk iphoneos --show-sdk-path`
+ARCHS = armv7 armv7s arm64
 
-CFLAGS = 
-GCC_BASE = $(GCC_BIN) -Os $(CFLAGS) -Wimplicit -isysroot $(SDK) -F$(SDK)/System/Library/Frameworks -F$(SDK)/System/Library/PrivateFrameworks
+THEOS_BUILD_DIR = Packages
 
-all: dumpdecrypted.dylib
+include theos/makefiles/common.mk
 
-dumpdecrypted.dylib: dumpdecrypted.o 
-	$(GCC_UNIVERSAL) -dynamiclib -o $@ $^
+LIBRARY_NAME = dumpdecrypted
+dumpdecrypted_CFLAGS = -fno-objc-arc
+dumpdecrypted_FILES = dumpdecrypted.c
 
-%.o: %.c
-	$(GCC_UNIVERSAL) -c -o $@ $< 
-
-clean:
-	rm -f *.o dumpdecrypted.dylib
+include $(THEOS_MAKE_PATH)/library.mk

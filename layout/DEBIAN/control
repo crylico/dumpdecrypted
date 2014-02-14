@@ -1,0 +1,10 @@
+Package: com.crylico.dumpdecrypted
+Name: dumpdecrypted
+Depends: 
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: dumpdecrypted by Stefan Esser (@i0nic). Usage: dumpdecrypted <path/to/encrypted/binary> DISCLAIMER: This tool is only meant for security research purposes, not for application crackers. Copyright 2014 Stefan Esser.
+Homepage: http://github.com/crylico/dumpdecrypted
+Author: Kyle Levin <me@kylelevin.com>
+Section: Development
+Tag: role::developer
