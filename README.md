@@ -1,7 +1,8 @@
 dumpdecrypted
 =============
 
-Original Author: Stefan Esser (@i0nic) 2011-2014<br>
+Original Author: Stefan Esser (@i0nic) 2011-2014
+
 Modified By: Kyle Levin (@crylico) 2014
 
 This fork of dumpdecrypted contains a CLI which improves the ease of use of dumpdecrypted. A complete package is available at http://repo.kylelevin.com/ via Cydia.
