@@ -4,11 +4,11 @@ dumpdecrypted
 Original Author: Stefan Esser (@i0nic) 2011-2014
 Modified By: Kyle Levin (@crylico) 2014
 
-This fork of dumpdecrypted contains a CLI which improves the ease of use of dumpdecrypted. A complete package is available at <a>http://repo.kylelevin.com/</a> via Cydia.
+This fork of dumpdecrypted contains a CLI which improves the ease of use of dumpdecrypted. A complete package is available at http://repo.kylelevin.com/ via Cydia.
 
 Once installed, run `dumpdecrypted -h` for usage info.
 
-Special thanks to MP0w (<a>https://github.com/MP0w/</a>) for providing the basis of this extension.
+Special thanks to MP0w (https://github.com/MP0w/) for providing the basis of this extension.
 
 Original README:
 ================
